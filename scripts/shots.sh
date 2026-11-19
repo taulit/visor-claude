@@ -49,7 +49,7 @@ if [[ "${1:-}" == --inside ]]; then
         shell_wait_for "$(find visor-claude-message).some(a => a.mapped)"
         sleep 0.6
     fi
-    if [[ "$2" == catalog ]]; then shell_shot_focus "$3" visor-sheet 24; else shell_shot "$3"; fi
+    if [[ "$2" == catalog ]]; then shell_shot_focus "$3" visor-sheet 0 --frame; else shell_shot "$3"; fi
     exit 0
 fi
 
@@ -82,8 +82,8 @@ for scheme in dark light; do
     number=$((number + 1))
     shot open "$repo/docs/screenshots/claude-$scheme.png" --scheme "$scheme"
     shot peek "$repo/docs/screenshots/claude-peek-$scheme.png" --scheme "$scheme"
-    # 1600x1000 as the catalog wants, from a monitor twice as sharp, on the wallpaper of Visor.
+    # 1600x1000 as the catalog wants, from a monitor four times as sharp, as a card on the wallpaper of Visor.
     shot catalog "$repo/catalog/$uuid/screenshot-$number.png" --scheme "$scheme" \
-        --size 3200x2000 --scale 2 --wallpaper "$visor_repo/scripts/assets/wallpaper.jpg"
+        --size 6400x4000 --scale 4
 done
 exit "$fail"
