@@ -5,7 +5,8 @@
 #
 #   docs/screenshots/claude-<scheme>.png        the open panel, 1920×1080
 #   docs/screenshots/claude-peek-<scheme>.png   the chip of a waiting session
-#   catalog/<uuid>/screenshot-<n>.png           the open panel, 1600×1000, for the catalog
+#   catalog/<uuid>/screenshot-<n>.png           the module alone in the panel, close up on
+#                                               the wallpaper of Visor, 1600×1000, for the catalog
 #
 # Usage: scripts/shots.sh
 set -uo pipefail
@@ -15,6 +16,8 @@ source tests/shell/lib.sh
 if [[ "${1:-}" == --inside ]]; then
     inside
     shell_wait_for "$entry != null && $entry.active" 15
+    # The pictures of the catalog: the module alone in the panel, close up.
+    [[ "$2" == catalog ]] && dconf write /org/gnome/shell/extensions/visor/disabled-modules "['upcoming', 'notifications']"
     project=/home/ada/code/lighthouse
     # A window the waiting session was started from, out of the way.
     gjs -m "$repo/tests/shell/window.js" 'Terminal' >"$HOME/window.out" 2>/dev/null &
@@ -46,7 +49,7 @@ if [[ "${1:-}" == --inside ]]; then
         shell_wait_for "$(find visor-claude-message).some(a => a.mapped)"
         sleep 0.6
     fi
-    shell_shot "$3"
+    if [[ "$2" == catalog ]]; then shell_shot_focus "$3" visor-sheet 24; else shell_shot "$3"; fi
     exit 0
 fi
 
@@ -79,6 +82,8 @@ for scheme in dark light; do
     number=$((number + 1))
     shot open "$repo/docs/screenshots/claude-$scheme.png" --scheme "$scheme"
     shot peek "$repo/docs/screenshots/claude-peek-$scheme.png" --scheme "$scheme"
-    shot open "$repo/catalog/$uuid/screenshot-$number.png" --scheme "$scheme" --size 1600x1000
+    # 1600x1000 as the catalog wants, from a monitor twice as sharp, on the wallpaper of Visor.
+    shot catalog "$repo/catalog/$uuid/screenshot-$number.png" --scheme "$scheme" \
+        --size 3200x2000 --scale 2 --wallpaper "$visor_repo/scripts/assets/wallpaper.jpg"
 done
 exit "$fail"
