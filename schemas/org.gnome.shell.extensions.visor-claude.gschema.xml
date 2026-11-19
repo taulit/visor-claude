@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="visor-claude">
+  <schema id="org.gnome.shell.extensions.visor-claude" path="/org/gnome/shell/extensions/visor-claude/">
+    <key name="flash-on-waiting-sessions" type="b">
+      <default>true</default>
+      <summary>Show briefly when a session is waiting</summary>
+      <description>Show the notch for a moment when a Claude Code session starts to wait for a permission or an answer.</description>
+    </key>
+  </schema>
+</schemalist>

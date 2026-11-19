@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/module.schema.json",
+  "uuid": "visor-claude@taulit.github.io",
+  "name": "Claude Code",
+  "summary": {
+    "en": "Your Claude Code sessions in the notch: what works, what is done and what waits for you.",
+    "de": "Deine Claude-Code-Sitzungen in der Notch: was läuft, was fertig ist und was auf dich wartet."
+  },
+  "description": {
+    "en": "Shows the Claude Code sessions that run on this computer as rows in Now. A session that waits for a permission or an answer turns amber, shows what it asks about and shows itself briefly. Expand a row to read the last message; a button brings the window of the session to the front when it can be told which one it is. Nothing to set up: it reads the session files and the end of the transcripts below ~/.claude. It makes no network request and writes nothing; permissions are answered in Claude Code, not in Visor.",
+    "de": "Zeigt die Claude-Code-Sitzungen, die auf diesem Computer laufen, als Zeilen in „Jetzt“. Eine Sitzung, die auf eine Erlaubnis oder eine Antwort wartet, wird bernsteinfarben, zeigt, worum es geht, und zeigt sich kurz. Aufgeklappt zeigt die Zeile die letzte Nachricht; ein Knopf holt das Fenster der Sitzung nach vorn, wenn sich sagen lässt, welches es ist. Nichts einzurichten: gelesen werden die Sitzungsdateien und das Ende der Transkripte unter ~/.claude. Es gibt keine Netzwerkanfrage und es wird nichts geschrieben; Erlaubnisse beantwortest du in Claude Code, nicht in Visor."
+  },
+  "shows": {
+    "en": "One row per session that works, waits or has just finished, a chip in the peek row and a dot next to the clock while a session waits.",
+    "de": "Eine Zeile je Sitzung, die arbeitet, wartet oder gerade fertig wurde, dazu ein Chip in der Vorschau und ein Punkt neben der Uhr, solange eine Sitzung wartet."
+  },
+  "appears": {
+    "en": "While Claude Code runs on this computer and a session works or waits. Finished sessions leave after two minutes; sessions that rest and a computer without Claude Code show nothing.",
+    "de": "Solange Claude Code auf diesem Computer läuft und eine Sitzung arbeitet oder wartet. Fertige Sitzungen verschwinden nach zwei Minuten; ruhende Sitzungen und ein Computer ohne Claude Code zeigen nichts."
+  },
+  "slot": "now",
+  "author": { "name": "taulit", "url": "https://github.com/taulit" },
+  "repo": "https://github.com/taulit/visor-claude",
+  "ego_id": null,
+  "license": "GPL-2.0-or-later",
+  "api": 1,
+  "tags": ["development", "ai"],
+  "icon": "visor-claude@taulit.github.io/icon.svg",
+  "screenshots": [
+    "visor-claude@taulit.github.io/screenshot-1.png",
+    "visor-claude@taulit.github.io/screenshot-2.png"
+  ],
+  "status": "listed",
+  "verified": true,
+  "added": "2026-11-19"
+}

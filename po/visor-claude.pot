@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the visor-claude package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: visor-claude\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 10:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: build/module.js:60 build/module.js:190
+msgid "Claude Code"
+msgstr ""
+
+#: build/module.js:159
+#, javascript-format
+msgid "+ %d more"
+msgstr ""
+
+#: build/module.js:193
+#, javascript-format
+msgid "%s is waiting"
+msgstr ""
+
+#: build/module.js:203 build/module.js:204
+msgid "Working"
+msgstr ""
+
+#: build/module.js:207
+msgid "Wants to run"
+msgstr ""
+
+#: build/module.js:209
+msgid "Wants to use a file"
+msgstr ""
+
+#: build/module.js:210
+msgid "Asks for permission"
+msgstr ""
+
+#: build/module.js:212
+msgid "Has a question"
+msgstr ""
+
+#: build/module.js:214
+msgid "Waits for you"
+msgstr ""
+
+#: build/module.js:216
+msgid "Done"
+msgstr ""
+
+#: build/module.js:227
+msgid "Untitled session"
+msgstr ""
+
+#: build/module.js:243
+msgid "Show"
+msgstr ""
+
+#: build/module.js:294
+msgid "Answer in the terminal or the app the session runs in."
+msgstr ""
+
+#: build/module.js:305
+msgid "Show window"
+msgstr ""
+
+#: build/prefs.js:35
+msgid "General"
+msgstr ""
+
+#: build/prefs.js:42
+msgid "Visor is not installed"
+msgstr ""
+
+#: build/prefs.js:43
+msgid "This module needs Visor and does nothing without it."
+msgstr ""
+
+#: build/prefs.js:45
+msgid "Get Visor"
+msgstr ""
+
+#: build/prefs.js:51
+msgid "Sessions"
+msgstr ""
+
+#: build/prefs.js:52
+msgid ""
+"Shows the Claude Code sessions that run on this computer. It reads the "
+"session files and the end of the transcripts in the folder of Claude Code, "
+"writes nothing and sends nothing."
+msgstr ""
+
+#: build/prefs.js:55
+msgid "Folder of Claude Code"
+msgstr ""
+
+#: build/prefs.js:60
+msgid "Behavior"
+msgstr ""
+
+#: build/prefs.js:61
+msgid "Show briefly when a session is waiting"
+msgstr ""

@@ -1,0 +1,33 @@
+/* --- Claude Code: what an expanded session row shows --- */
+/* Visor's kit has no element for body text (see README, "Gap in the module API"),
+   so these two labels take the text colours of Visor by hand. */
+.visor-claude-details {
+  spacing: 8px;
+}
+.visor-claude-message {
+  font-size: 9.375pt;
+  /* Four lines. */
+  max-height: 5.8em;
+}
+.visor-claude-hint {
+  font-size: 8.625pt;
+}
+.visor-claude-buttons {
+  spacing: 6px;
+}
+.visor-dark .visor-claude-message,
+.visor-dark .visor-claude-hint {
+  color: rgba(245, 245, 247, 0.6);
+}
+.visor-light .visor-claude-message,
+.visor-light .visor-claude-hint {
+  color: rgba(29, 29, 31, 0.6);
+}
+.visor-dark.visor-hc .visor-claude-message,
+.visor-dark.visor-hc .visor-claude-hint {
+  color: rgba(245, 245, 247, 0.8);
+}
+.visor-light.visor-hc .visor-claude-message,
+.visor-light.visor-hc .visor-claude-hint {
+  color: rgba(29, 29, 31, 0.8);
+}

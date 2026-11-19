@@ -1,0 +1,116 @@
+# German translation for the Claude Code module of Visor.
+# This file is distributed under the same license as the visor-claude package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: visor-claude\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-19 10:47+0100\n"
+"PO-Revision-Date: 2026-11-19 10:00+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: build/module.js:60 build/module.js:190
+msgid "Claude Code"
+msgstr "Claude Code"
+
+#: build/module.js:159
+#, javascript-format
+msgid "+ %d more"
+msgstr "+ %d weitere"
+
+#: build/module.js:193
+#, javascript-format
+msgid "%s is waiting"
+msgstr "%s wartet"
+
+#: build/module.js:203 build/module.js:204
+msgid "Working"
+msgstr "Arbeitet"
+
+#: build/module.js:207
+msgid "Wants to run"
+msgstr "Möchte ausführen"
+
+#: build/module.js:209
+msgid "Wants to use a file"
+msgstr "Möchte eine Datei verwenden"
+
+#: build/module.js:210
+msgid "Asks for permission"
+msgstr "Bittet um Erlaubnis"
+
+#: build/module.js:212
+msgid "Has a question"
+msgstr "Hat eine Frage"
+
+#: build/module.js:214
+msgid "Waits for you"
+msgstr "Wartet auf dich"
+
+#: build/module.js:216
+msgid "Done"
+msgstr "Fertig"
+
+#: build/module.js:227
+msgid "Untitled session"
+msgstr "Unbenannte Sitzung"
+
+#: build/module.js:243
+msgid "Show"
+msgstr "Zeigen"
+
+#: build/module.js:294
+msgid "Answer in the terminal or the app the session runs in."
+msgstr "Antworte im Terminal oder in der App, in der die Sitzung läuft."
+
+#: build/module.js:305
+msgid "Show window"
+msgstr "Fenster zeigen"
+
+#: build/prefs.js:35
+msgid "General"
+msgstr "Allgemein"
+
+#: build/prefs.js:42
+msgid "Visor is not installed"
+msgstr "Visor ist nicht installiert"
+
+#: build/prefs.js:43
+msgid "This module needs Visor and does nothing without it."
+msgstr "Dieses Modul braucht Visor und tut ohne Visor nichts."
+
+#: build/prefs.js:45
+msgid "Get Visor"
+msgstr "Visor holen"
+
+#: build/prefs.js:51
+msgid "Sessions"
+msgstr "Sitzungen"
+
+#: build/prefs.js:52
+msgid ""
+"Shows the Claude Code sessions that run on this computer. It reads the "
+"session files and the end of the transcripts in the folder of Claude Code, "
+"writes nothing and sends nothing."
+msgstr ""
+"Zeigt die Claude-Code-Sitzungen, die auf diesem Computer laufen. Gelesen "
+"werden die Sitzungsdateien und das Ende der Transkripte im Ordner von Claude "
+"Code; nichts wird geschrieben, nichts gesendet."
+
+#: build/prefs.js:55
+msgid "Folder of Claude Code"
+msgstr "Ordner von Claude Code"
+
+#: build/prefs.js:60
+msgid "Behavior"
+msgstr "Verhalten"
+
+#: build/prefs.js:61
+msgid "Show briefly when a session is waiting"
+msgstr "Kurz zeigen, wenn eine Sitzung wartet"
